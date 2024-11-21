@@ -1,1 +1,3 @@
-console.log("HOLA CREE EL JS")
+fetch('https://dummyjson.com/recipes')
+.then(res => res.json())
+.then(console.log);
