@@ -26,3 +26,5 @@ fetch('https://dummyjson.com/recipes')
         .catch(function (error){
             console.log("Mi error fue", error);
         })
+
+    alert('hola')
