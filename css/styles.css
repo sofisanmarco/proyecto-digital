@@ -21,9 +21,6 @@ a {
     margin-top: 5px;
 }
 
-body {
-}
-
 /* RECETA */
 
 
@@ -38,5 +35,32 @@ body {
 
 /* LOGIN */
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 3px solid black;
+    height: 300px;
+    font-size: 17px;
+}
+
+.contact {
+    border: 1px solid pink;
+    margin-top: 17px;
+
+}
+
+.form-input {
+    width: 500px;
+    height: 30px;
+}
+
+.loginlogo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
 /* REGISTER */
