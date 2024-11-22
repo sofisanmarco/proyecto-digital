@@ -13,8 +13,11 @@ fetch(`https://dummyjson.com/recipes/tag/${id}`)
        // console.log(data)
         for (let i=0; i < data.recipes.length; i++){
             let right = data.recipes[i];
+    
             
             let markUp = `
+            <section class="nombre">
+            ${variable}</section>
                 <article class="right">
                     <img src= ${right.image} >
                     <p> Name: ${right.name} </p>
