@@ -15,8 +15,7 @@ fetch('https://dummyjson.com/recipes')
                 <article class="right">
                     <img src= ${right.image} >
                     <p> Name: ${right.name} </p>
-                    <p> Ingridients: ${right.ingredients} </p>
-                    <p> Instructions: ${right.instructions} </p>
+                    <p> Nivel de dificultad: ${right.difficulty} </p>
                 </article>
                 `;
             recetin += markUp;
@@ -27,4 +26,3 @@ fetch('https://dummyjson.com/recipes')
             console.log("Mi error fue", error);
         })
 
-    alert('hola')
