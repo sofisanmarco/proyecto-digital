@@ -16,6 +16,7 @@ fetch('https://dummyjson.com/recipes')
                     <img src= ${right.image} >
                     <p> Name: ${right.name} </p>
                     <p> Nivel de dificultad: ${right.difficulty} </p>
+                    <a href=receta.html?id=${right.id}> Mas detalle </a>
                 </article>
                 `;
             recetin += markUp;

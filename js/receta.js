@@ -16,7 +16,7 @@ let detalleReceta = {
     foto: ''
 }
 
-fetch('https://dummyjson.com/recipes/1')
+fetch(`https://dummyjson.com/recipes/${id}`)
     .then(function(response){
         return response.json();
     })  
