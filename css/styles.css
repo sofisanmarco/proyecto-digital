@@ -1,5 +1,28 @@
-/* INDEX */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+/* INDEX */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+
+body {
+}
 
 /* RECETA */
 
