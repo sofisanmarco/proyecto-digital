@@ -21,7 +21,63 @@ a {
 }
 
 /* RECETA */
+.bodyreceta{
+    background-image: url(https://plus.unsplash.com/premium_photo-1701628122543-bc5cc576c4c9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVkJTIwZ3JhZGllbnR8ZW58MHwwfDB8fHww);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gluten", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: #AE2012;
+    height: 100vh;
+}
+.bodyreceta .foto img{
+    width: 500px;
+    border-radius: 40px;
+}
+.paraelnombre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 38px;
+}
 
+.paraeltexto{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px 50px 5px 50px;
+    align-items: center;
+    padding: 40px;
+}
+
+
+.paraeltexto .instrucciones{
+    color: rgb(76, 43, 26);
+    display: flex;
+    width: 670px;
+    font-weight: 400;
+}
+
+.paraeltexto .tiempo{
+    width: 200px;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+}
+
+.paraeltexto .foto img{
+    width: 500px;
+}
+
+.paracategoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    color: burlywood;
+}
 
 /* CATEGORIES */
 
@@ -45,7 +101,7 @@ a {
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 50px 30px 30px 30px;
+    margin: 150px 30px 30px 30px;
     background-color: rgba(255, 253, 208, 0.5);
     border-radius: 70px;
 }
