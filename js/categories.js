@@ -11,7 +11,7 @@ fetch('https://dummyjson.com/recipes/tags')
             let tag = data[i]; 
             let markUp = `
                 <article class="cat">
-                 <p><a href="category.html?id=${tag}">${tag}</a></p>
+                 <p><a class="categoriescolor" href="category.html?id=${tag}">${tag}</a></p>
                 </article>
                 `;
             type += markUp;   

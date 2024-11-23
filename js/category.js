@@ -3,6 +3,7 @@ let queryStringObj = new URLSearchParams(queryString)
 let id = queryStringObj.get('id')
 
 const recetas = document.querySelector('.recetitas') 
+const titulo = document.querySelector('.title')
 let recetin = ''
 
 fetch(`https://dummyjson.com/recipes/tag/${id}`)
@@ -11,13 +12,14 @@ fetch(`https://dummyjson.com/recipes/tag/${id}`)
     })  
     .then(function(data){
        // console.log(data)
+
+       titulo.innerHTML = `Category: ${id}`;
+    
         for (let i=0; i < data.recipes.length; i++){
             let right = data.recipes[i];
     
             
             let markUp = `
-            <section class="nombre">
-            ${variable}</section>
                 <article class="right">
                     <img src= ${right.image} >
                     <p> Name: ${right.name} </p>
