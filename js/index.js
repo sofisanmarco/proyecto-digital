@@ -12,7 +12,7 @@ fetch('https://dummyjson.com/recipes')
             let right = data.recipes[i];
             
             let markUp = `
-                <article class="right">
+                <article class="receta">
                     <img width="300px" height="300px" src= ${right.image}>
                     <p> Name: ${right.name} </p>
                     <p> Nivel de dificultad: ${right.difficulty} </p>

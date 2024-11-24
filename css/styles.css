@@ -39,6 +39,8 @@ a {
 }
 
 
+
+
 /* RECETA */
 .bodyreceta{
     background-image: url(https://plus.unsplash.com/premium_photo-1701628122543-bc5cc576c4c9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVkJTIwZ3JhZGllbnR8ZW58MHwwfDB8fHww);
@@ -154,6 +156,7 @@ a {
     margin: 0 auto;
     margin-top: 70px;
     height: 300px;
+    width: 900px;
     font-size: 18px;
     background-color: rgba(255, 0, 0, 0.39)
 }
@@ -165,6 +168,12 @@ a {
 .form-input {
     width: 500px;
     height: 30px;
+}
+
+.send {
+    height: 30px;
+    width: 65px;
+    margin-left: 215px;
 }
 
 .loginlogo {
