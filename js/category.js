@@ -21,10 +21,12 @@ fetch(`https://dummyjson.com/recipes/tag/${id}`)
             
             let markUp = `
                 <article class="right">
-                    <img src= ${right.image} >
+                    <img class="imagen" src= ${right.image} >
+                    <div class = "parrafo">
                     <p> Name: ${right.name} </p>
                     <p> Nivel de dificultad: ${right.difficulty} </p>
                     <a href=receta.html?id=${right.id}> Mas detalle </a>
+                    </div>
                 </article>
                 `;
             recetin += markUp;
