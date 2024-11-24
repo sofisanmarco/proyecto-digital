@@ -17,7 +17,7 @@ function getData(){
                 <article class="receta">
                     <img width="300px" height="300px" src= ${right.image}>
                     <p> Name: ${right.name} </p>
-                    <p> Nivel de dificultad: ${right.difficulty} </p>
+                    <p> Nivel de dificultad: <span class="negrita"> ${right.difficulty} </span> </p>
                     <a href=receta.html?id=${right.id}> Mas detalle </a>
                 </article>
                 `;
