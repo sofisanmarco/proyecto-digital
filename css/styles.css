@@ -121,7 +121,26 @@ a {
 }
 
 /* CATEGORY */
+.imagen{
+    width: 500px;
+    height: 500px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    display: flex;
+}
 
+.right{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.parrafo{
+    margin-left: 30px;
+    margin-top: 200px;
+    font-size: 17px;
+
+}
 
 /* SEARCH-RESULTS */
 
