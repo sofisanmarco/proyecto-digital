@@ -21,6 +21,16 @@ a {
     margin-top: 5px;
 }
 
+.footer {
+    background-color: rgba(255, 0, 0, 0.26);
+    display: flex;
+    height: 100px;
+    margin-top: 75px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .recetitas {
     display: flex;
     justify-content: space-around;
@@ -28,11 +38,6 @@ a {
     border: solid 1px black;
 }
 
-.right {
-    border: solid 1px blue;
-    align-items: center;
-    width: 200px;
-}
 
 /* RECETA */
 .bodyreceta{
@@ -147,16 +152,14 @@ a {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 50px;
-    border: 3px solid black;
+    margin-top: 70px;
     height: 300px;
-    font-size: 17px;
+    font-size: 18px;
+    background-color: rgba(255, 0, 0, 0.39)
 }
 
 .contact {
-    border: 1px solid pink;
     margin-top: 17px;
-
 }
 
 .form-input {
@@ -167,7 +170,7 @@ a {
 .loginlogo {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* REGISTER */
