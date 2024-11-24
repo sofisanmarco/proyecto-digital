@@ -21,6 +21,10 @@ a {
     margin-top: 5px;
 }
 
+.logo {
+    border-radius: 90%;
+}
+
 .footer {
     background-color: rgba(255, 0, 0, 0.26);
     display: flex;
@@ -31,13 +35,27 @@ a {
     text-align: center;
 }
 
+.h1-index {
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
 .recetitas {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    border: solid 1px black;
 }
 
+.receta {
+    margin-top: 20px;
+    text-align: center;
+}
 
 
 
@@ -177,7 +195,8 @@ a {
     height: 300px;
     width: 900px;
     font-size: 18px;
-    background-color: rgba(255, 0, 0, 0.39)
+    background-color: rgba(255, 0, 0, 0.39);
+    border-radius:5%;
 }
 
 .contact {
@@ -199,6 +218,7 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    border-radius: 90%;
 }
 
 /* REGISTER */
