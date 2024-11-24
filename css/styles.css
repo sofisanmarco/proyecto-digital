@@ -22,7 +22,7 @@ a {
 
 /* RECETA */
 .bodyreceta{
-    background-image: url(https://plus.unsplash.com/premium_photo-1701628122543-bc5cc576c4c9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVkJTIwZ3JhZGllbnR8ZW58MHwwfDB8fHww);
+    background-image: url(https://i.pinimg.com/736x/97/fa/f5/97faf5fd511fed665fc7d13d6f095c00.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Gluten", cursive;
@@ -82,9 +82,9 @@ a {
 /* CATEGORIES */
 
 .bodycategories{
-    background-image: url(https://plus.unsplash.com/premium_photo-1699795944099-12dcf3266a55?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url(https://images.pexels.com/photos/6194605/pexels-photo-6194605.jpeg?auto=compress&cs=tinysrgb&w=800)
 }
 .cat .veinte{
     font-family: "Gluten", cursive;
@@ -102,7 +102,6 @@ a {
     padding-left: 20px;
     padding-right: 20px;
     margin: 150px 30px 30px 30px;
-    background-color: rgba(255, 253, 208, 0.5);
     border-radius: 70px;
 }
 .cat{
@@ -117,7 +116,8 @@ a {
 }
 
 .categoriescolor{
-    color: rgb(67, 52, 52); 
+    color: #4a350e;
+    /*rgb675252 */
 }
 
 /* CATEGORY */
@@ -157,3 +157,6 @@ a {
 }
 
 /* REGISTER */
+
+
+
