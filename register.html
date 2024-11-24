@@ -24,12 +24,33 @@
             </ul>
         </header>
         <main>
-            <form action="index.html" method="get">
-                
-                <div class="contact">
-
-                </div>
-            </form>
+            <div class="register-container">
+                <form method="get" action="login.html">
+                    <div class="contact"><label for="email">Correo electrónico</label></div>
+                    <div class="contact">
+                        <input type="email" name="email" id="email" class="form-input">
+                        <div class="invalid-feedback email"></div>
+                    </div>
+                    <div class="contact"><label for="password">Contraseña</label></div>
+                    <div class="contact">
+                        <input type="password" name="password" id="password" class="form-input">
+                        <div class="invalid-feedback password"></div>
+                    </div>
+                    <div class="contact">
+                        <input type="checkbox" name="terminos" value="si" required>
+                        <label for="terminos">  Acepto los terminos y condiciones </label>
+                    </div>
+                    <div class="contact">
+                        <a href="login.html" class="registro"> Ya tienes cuenta?</a>
+                    </div>
+                    <div class="contact">
+                        <button class="send" type="submit" class="button">ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+            <div class="loginlogo">
+                <img src="logo.jpg" width="150px" height="150px">
+            </div>
         </main>
         <footer>
             <div class="footer">

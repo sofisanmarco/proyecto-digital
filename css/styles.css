@@ -5,6 +5,11 @@
 }
 
 /* INDEX */
+
+body {
+    background-color: rgba(253, 217, 223, 0.51);
+}
+
 li {
     list-style: none;
 }
@@ -44,6 +49,7 @@ a {
 
 .negrita {
     font-weight: bold;
+    color: red;
 }
 
 .recetitas {
@@ -196,7 +202,6 @@ a {
     width: 900px;
     font-size: 18px;
     background-color: rgba(255, 0, 0, 0.39);
-    border-radius:5%;
 }
 
 .contact {
@@ -222,3 +227,15 @@ a {
 }
 
 /* REGISTER */
+
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 350px;
+    width: 900px;
+    font-size: 18px;
+    background-color: rgba(253, 54, 54, 0.39);
+}
