@@ -129,7 +129,7 @@ a {
 .bodycategories{
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(https://images.pexels.com/photos/6194605/pexels-photo-6194605.jpeg?auto=compress&cs=tinysrgb&w=800)
+    background-color: #FFE5EC;
 }
 .cat .veinte{
     font-family: "Gluten", cursive;
@@ -161,7 +161,7 @@ a {
 }
 
 .categoriescolor{
-    color: #4a350e;
+    color: #FF8FAB;
     /*rgb675252 */
 }
 
