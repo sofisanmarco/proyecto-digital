@@ -1,5 +1,4 @@
 const form = document.querySelector("form")
-
 const email = document.getElementById("email")
 const password = document.getElementById("password")
 
@@ -26,9 +25,8 @@ form.addEventListener("submit", function(event) {
     } else {
         Invalidpassword.style.display = 'none'
     }
-
+    
     if (!errors) {
         this.submit
     }
 })
-

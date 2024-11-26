@@ -199,7 +199,6 @@ a {
     height: 300px;
     width: 900px;
     font-size: 18px;
-    background-color: rgba(255, 0, 0, 0.39);
 }
 
 .contact {
@@ -220,8 +219,7 @@ a {
 .loginlogo {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    border-radius: 90%;
+    margin-top: 25px;
 }
 
 /* REGISTER */
@@ -235,5 +233,4 @@ a {
     height: 350px;
     width: 900px;
     font-size: 18px;
-    background-color: rgba(253, 54, 54, 0.39);
 }
