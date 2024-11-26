@@ -6,6 +6,7 @@
 
 /* INDEX */
 
+
 body {
     background-color: rgba(253, 217, 223, 0.51);
 }
@@ -23,7 +24,8 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5px;
+    height: 100px;
+    font-family: "Gluten";
 }
 
 .logo {
@@ -62,7 +64,6 @@ a {
     margin-top: 20px;
     text-align: center;
 }
-
 
 
 /* RECETA */
@@ -139,6 +140,34 @@ a {
     font-size: 25px;
     
   }
+.tituloCategories{
+    font-family: "Gluten", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: #DE4D86;
+    margin-top: 20px;
+  }
+  .pregunta{
+    font-family: "Gluten", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    color: #E36497;
+    margin-top: 5px;
+    background-color: rgba(254, 250, 224)
+   
+  }
 .categories{
     display: flex;
     flex-direction: row;
@@ -146,7 +175,7 @@ a {
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 150px 30px 30px 30px;
+    margin: 20px 30px 30px 30px;
     border-radius: 70px;
 }
 .cat{
