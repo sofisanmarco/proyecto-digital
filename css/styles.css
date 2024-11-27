@@ -349,6 +349,11 @@ li {
     color: #DE4D86;
 }
 
+.registro {
+    text-decoration: none;
+    color: black;
+}
+
 /* REGISTER */
 
 .register-container {

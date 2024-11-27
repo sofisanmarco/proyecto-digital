@@ -1,4 +1,4 @@
-const form = document.querySelector("form")
+const form = document.querySelector("#register-form")
 
 const email = document.getElementById("email")
 const password = document.getElementById("password")
