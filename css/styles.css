@@ -251,6 +251,11 @@ li {
     font-style: normal;
 }
 
+.link {
+    text-decoration: none;
+    color: black;
+}
+
 /* SEARCH-RESULTS */
 
 .search-h1 {
