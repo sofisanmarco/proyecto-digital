@@ -203,7 +203,7 @@ a {
     margin-top: 20px;
 }
 
-.right{
+.derecha{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -213,7 +213,6 @@ a {
     margin-top: 200px;
     font-size: 17px;
 }
-
 
 /* SEARCH-RESULTS */
 
