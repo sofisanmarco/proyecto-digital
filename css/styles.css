@@ -16,9 +16,10 @@ li {
     list-style: none;
 }
 
+
 .negro a{
     text-decoration: none;
-    color: black
+    color: black;
 }
 .receta a{
     text-decoration: none;
@@ -116,39 +117,6 @@ li {
 
 
 /* RECETA */
-<<<<<<< HEAD
-.bodyreceta{
-    background-image: url(https://i.pinimg.com/736x/97/fa/f5/97faf5fd511fed665fc7d13d6f095c00.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #AE2012;
-    height: 100vh;
-    
-    
-}
-.bodyreceta .foto img{
-    width: 500px;
-    border-radius: 40px;
-}
-.paraelnombre{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-    font-size: 38px;
-   
-}
-
-.paraeltexto{
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 10px 50px 5px 50px;
-    align-items: center;
-    padding: 40px;
-}
-=======
->>>>>>> 7b33314035cbab3af8b5f4393a30d15179ae3f65
-
 .nombre {
     text-align: center;
     margin-top: 10px;
@@ -158,25 +126,11 @@ li {
     font-family: "Prompt", sans-serif;
     font-weight: 1000;
     font-style: normal;
-    
 }
 
 .receta-container {
     display: flex;
-<<<<<<< HEAD
-    width: 670px;
-    
-}
-
-.paraeltexto .tiempo{
-    width: 200px;
     justify-content: center;
-    font-weight: 600;
-    text-align: center;
-  
-=======
-    justify-content: center;
->>>>>>> 7b33314035cbab3af8b5f4393a30d15179ae3f65
 }
 
 .paraeltexto {
@@ -196,7 +150,6 @@ li {
 .instrucciones, .tiempo {
     margin-bottom: 15px;
 }
-
 
 /* CATEGORIES */
 
@@ -297,11 +250,6 @@ li {
     font-weight: 1000;
     font-style: normal;
 }
-
-.det{
-    font-weight: bold;
-}
-
 
 /* SEARCH-RESULTS */
 
