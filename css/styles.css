@@ -69,7 +69,9 @@ a {
 }
 
 .load{
-    font-size: 20px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
 .cargar{
@@ -77,6 +79,7 @@ a {
     justify-content: center;
     align-self: center;
     margin-top: 30px;
+    height: 35px;
 }
 
 
@@ -196,13 +199,13 @@ a {
     flex-wrap: nowrap;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 12px;
+    margin-top: 20px;
     width: 250px;
     border-radius: 5px; 
     justify-content: center;  
     align-items: center;
-    border: 3px solid rgb(229, 137, 215);
-    border-radius: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 200px;
 }
 
 .categoriescolor{
