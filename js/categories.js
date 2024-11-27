@@ -21,13 +21,13 @@ fetch('https://dummyjson.com/recipes/tags')
         for (let i =0; i<ratonarriba.length; i++){
             let raton =ratonarriba[i]
             raton.addEventListener('mouseover', function(){
-                raton.style.fontSize = '30px';
+                raton.style.color = 'white';
     
             
             });
             let ratin =ratonarriba[i]
             ratin.addEventListener('mouseout', function(){
-                ratin.style.fontSize = '';
+                ratin.style.color = '';
                 
         
             });

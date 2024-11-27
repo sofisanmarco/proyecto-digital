@@ -196,13 +196,13 @@ a {
     flex-wrap: nowrap;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 12px;
+    margin-top: 20px;
     width: 250px;
     border-radius: 5px; 
     justify-content: center;  
     align-items: center;
-    border: 3px solid rgb(229, 137, 215);
-    border-radius: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 200px;
 }
 
 .categoriescolor{
