@@ -126,25 +126,48 @@ li {
     font-family: "Prompt", sans-serif;
     font-weight: 1000;
     font-style: normal;
+    
 }
 
 .receta-container {
     display: flex;
     justify-content: center;
+   
+    
+    
 }
+.receta-container img{
+    border: 3px solid rgb(94, 61, 61);
+    border-radius: 10%;
+}
+
+.instrucciones{
+   text-align: center;
+}
+
 
 .paraeltexto {
     width: 500px;
     font-size: 17px;
     margin-left: 20px;
     padding: 10px;
-    padding-top: 80px;
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    color: #6C757D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .receta-title {
     font-size: 19px;
     font-weight: bold;
     margin-bottom: 5px;
+    color: #DE4D86;
 }
 
 .instrucciones, .tiempo {
@@ -174,7 +197,7 @@ li {
     font-weight: 1000;
     font-style: normal;
   }
-  .pregunta{
+.pregunta{
     
     font-size: 30px;
     display: flex;
@@ -228,8 +251,8 @@ li {
 /* CATEGORY */
 
 .imagen{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     margin-top: 15px;
     margin-bottom: 10px;
     border: 6px solid rgb(94, 61, 61);
@@ -238,6 +261,8 @@ li {
 
 .detalle{
     font-weight: bold;
+    
+    
 }
 
 .title {
@@ -249,11 +274,18 @@ li {
     font-family: "Prompt", sans-serif;
     font-weight: 1000;
     font-style: normal;
+    
 }
-
+.parrafo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 .link {
     text-decoration: none;
     color: black;
+    
 }
 
 /* SEARCH-RESULTS */
@@ -268,7 +300,6 @@ li {
     font-weight: 1000;
     font-style: normal;
 }
-
 
 /* LOGIN */
 
@@ -332,7 +363,6 @@ li {
     font-family: "Proza Libre", sans-serif;
     font-weight: 400;
     font-style: normal;
-   
 }
 
 /*color: #781d48;
