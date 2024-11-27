@@ -1,5 +1,6 @@
 let queryString = location.search
 let queryStringObj = new URLSearchParams(queryString)
+
 let buscar = queryStringObj.get("search")
 let lista_search = document.querySelector(".platos")
 let recetas_search = ""

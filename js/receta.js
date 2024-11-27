@@ -30,11 +30,10 @@ fetch(`https://dummyjson.com/recipes/${id}`)
         detalleReceta.foto = data.image
 
         nombreReceta.innerText = detalleReceta.nombre
-        tiempo.innerText = `Tiempo de Coccion: ${detalleReceta.tiempo}`
-        instrucciones.innerText = `Instrucciones de preparación: 
-        ${detalleReceta.instrucciones}`
-        categorias.innerText = `Categorias: ${detalleReceta.categorias}`
-        foto.innerHTML = `<img src=${detalleReceta.foto}>`
+        tiempo.innerText = `${detalleReceta.tiempo}`
+        instrucciones.innerText = `${detalleReceta.instrucciones}`
+        categorias.innerText = `${detalleReceta.categorias}`
+        foto.innerHTML = `<img weight="500px" height="500px" src=${detalleReceta.foto}>`
 
     })
     .catch(function(e){

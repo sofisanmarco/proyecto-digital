@@ -89,74 +89,41 @@ a {
 
 
 /* RECETA */
-.bodyreceta{
-    background-image: url(https://i.pinimg.com/736x/97/fa/f5/97faf5fd511fed665fc7d13d6f095c00.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #AE2012;
-    height: 100vh;
-    
-}
-.bodyreceta .foto img{
-    width: 500px;
-    border-radius: 40px;
-}
-.paraelnombre{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-    font-size: 38px;
-   
-}
-
-.paraeltexto{
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 10px 50px 5px 50px;
-    align-items: center;
-    padding: 40px;
-    
-}
 
 .nombre {
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 35px;
+    margin-bottom: 30px;
+    font-size: 40px;
     color: #DE4D86;
     font-family: "Prompt", sans-serif;
     font-weight: 1000;
     font-style: normal;
 }
 
-.paraeltexto .instrucciones{
-    color: rgb(76, 43, 26);
+.receta-container {
     display: flex;
-    width: 670px;
-    
-    
-}
-
-.paraeltexto .tiempo{
-    width: 200px;
     justify-content: center;
-    font-weight: 600;
-    text-align: center;
-    
 }
 
-.paraeltexto .foto img{
+.paraeltexto {
     width: 500px;
+    font-size: 17px;
+    margin-left: 20px;
+    padding: 10px;
+    padding-top: 80px;
 }
 
-.paracategoria{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 40px;
-    color: burlywood;
+.receta-title {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
+
+.instrucciones, .tiempo {
+    margin-bottom: 15px;
+}
+
 
 /* CATEGORIES */
 
@@ -296,6 +263,11 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 25px;
+}
+
+.email, .password{
+    font-size: 15px;
+    color: #DE4D86;
 }
 
 /* REGISTER */
