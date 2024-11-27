@@ -18,7 +18,10 @@ li {
 
 a {
     text-decoration: none;
-    color: #781d48;
+    color: black;
+}
+
+.links {
     font-size: 15px;
 }
 
@@ -26,12 +29,11 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100px;
+    height: 80px;
 }
 
 .logo {
     border-radius: 90%;
-    
 }
 
 .footer {
