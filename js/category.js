@@ -25,9 +25,7 @@ fetch(`https://dummyjson.com/recipes/tag/${id}`)
                     <div class = "parrafo">
                     <p> Name: ${right.name} </p>
                     <p> Nivel de dificultad: ${right.difficulty} </p>
-                    </div>
-                    <div class="detalle"
-                    <a href=receta.html?id=${right.id}> Mas detalle </a>
+                    <a href=receta.html?id=${right.id}> <span class="det"> Mas detalle </a>
                     </div>
 
                 </article>

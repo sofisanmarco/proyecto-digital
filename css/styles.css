@@ -250,6 +250,11 @@ a {
     font-style: normal;
 }
 
+.det{
+    font-weight: bold;
+}
+
+
 /* SEARCH-RESULTS */
 
 .search-h1 {

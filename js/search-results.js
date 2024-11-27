@@ -1,8 +1,8 @@
 let queryString = location.search
 let queryStringObj = new URLSearchParams(queryString)
 let buscar = queryStringObj.get("search")
-let lista_search = document.querySelector(".platos")
-let recetas_search = ""
+let search = document.querySelector(".recetitas")
+let recets = ""
 
 console.log(buscar)
 fetch(`https://dummyjson.com/recipes/search?q=${buscar}`)
@@ -20,13 +20,13 @@ fetch(`https://dummyjson.com/recipes/search?q=${buscar}`)
             <article class="receta">
                 <img width="300px" height="300px" src= ${right.image}>
                 <p> Name: ${right.name} </p>
-                <p> Nivel de dificultad: <span class="negrita"> ${right.difficulty} </span> </p>
+                <p> Nivel de dificultad: ${right.difficulty}  </p>
                 <a href=receta.html?id=${right.id}> Mas detalle </a>
             </article>
             `;
-        recetas_search += markUp;
+        recets += markUp;
     }
-    lista_search.innerHTML = recetin;
+    search.innerHTML = recets;
     })
     .catch(function (error){
         console.log("Mi error fue", error);
