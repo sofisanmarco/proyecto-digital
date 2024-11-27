@@ -196,13 +196,16 @@ a {
 }
 .cat{
     display: flex;
-    padding: 20px 70px 20px 70px;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 12px;
     width: 250px;
-    height: 300x;
     border-radius: 5px; 
     justify-content: center;  
     align-items: center;
+    border: 3px solid rgb(229, 137, 215);
+    border-radius: 50px;
 }
 
 .categoriescolor{
@@ -218,7 +221,7 @@ a {
     margin-top: 20px;
 }
 
-.derecha{
+.caja{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -231,6 +234,9 @@ a {
 }
 
 /* SEARCH-RESULTS */
+
+
+
 
 
 /* LOGIN */

@@ -20,7 +20,7 @@ fetch(`https://dummyjson.com/recipes/tag/${id}`)
     
             
             let markUp = `
-                <article class="derecha">
+                <article class="caja">
                     <img class="imagen" src= ${right.image} >
                     <div class = "parrafo">
                     <p> Name: ${right.name} </p>
