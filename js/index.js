@@ -1,9 +1,9 @@
 const recetas = document.querySelector('.recetitas') 
 let recetin = ''  
-let skip = 0
+let cargar = 0
 
 function getData(){
-    fetch(`https://dummyjson.com/recipes?limit=10&skip=${skip}`)
+    fetch(`https://dummyjson.com/recipes?limit=10&cargar=${cargar}`)
     .then(function(response){
         return response.json();
     })
@@ -62,8 +62,10 @@ form.addEventListener("submit", function(event) {
 
 getData() //invocamos a la funcion por primera vez
 
-document.querySelector(".load").addEventListener('click', function(e){
+let load = document.querySelector(".load")
+
+load.addEventListener('click', function(e){
     e.preventDefault()
-    skip += 10
+    cargar += 10
     getData()
 });
