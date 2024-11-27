@@ -48,8 +48,12 @@ a {
 
 .h1-index {
     text-align: center;
-    font-weight: lighter;
     margin-top: 10px;
+    font-size: 50px;
+    color: #DE4D86;
+    font-family: "Prompt", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
     
 }
 
@@ -113,9 +117,18 @@ a {
     align-items: center;
     padding: 40px;
     
-    
 }
 
+.nombre {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #DE4D86;
+    font-family: "Prompt", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+}
 
 .paraeltexto .instrucciones{
     color: rgb(76, 43, 26);
@@ -150,13 +163,12 @@ a {
 .bodycategories{
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #FFE5EC;
 }
+
 .cat .veinte{
-   
     font-size: 25px;
-    
-  }
+}
+
 .tituloCategories{
     font-size: 50px;
     display: flex;
@@ -227,7 +239,29 @@ a {
     font-weight: bold;
 }
 
+.title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #DE4D86;
+    font-family: "Prompt", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+}
+
 /* SEARCH-RESULTS */
+
+.search-h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #DE4D86;
+    font-family: "Prompt", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+}
 
 
 /* LOGIN */
