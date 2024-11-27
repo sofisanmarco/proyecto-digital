@@ -1,14 +1,15 @@
-const form = document.querySelector("form")
+const form = document.querySelector("#login-form")
 const email = document.getElementById("email")
 const password = document.getElementById("password")
 
 const Invalidemail = document.querySelector(".email")
 const Invalidpassword = document.querySelector(".password")
 
-let errors = false
+
 
 form.addEventListener("submit", function(event) {
     event.preventDefault(); 
+    let errors = false
 
     if (email.value === "") {
         Invalidemail.innerText = "Incompleto"
@@ -27,6 +28,6 @@ form.addEventListener("submit", function(event) {
     }
     
     if (!errors) {
-        this.submit
+        form.submit();
     }
 })

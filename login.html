@@ -20,15 +20,16 @@
                 <li><a href="login.html">LOGIN</a></li>
                 <li><a href="register.html">REGISTRO</a></li>
     
-                <li><form action="search_results.html" method="GET"></form>
+                <li>
+                    <form action="search_results.html" method="GET">
                 <input type="search" id="search" class="search" placeholder="BUSCAR">
-                <button type="submit"> <a href="search_results.html"> BUSCAR </a></button>
+                <button type="submit"> BUSCAR </a></button>  
                 </form></li>
             </ul>
         </header>
         <main>
             <div class="container">
-                <form method="get" action="index.html">
+                <form method="get" action="index.html" id="login-form">
                     <div class="contact"><label for="email">Correo electrónico</label></div>
                     <div class="contact">
                         <input type="email" name="email" id="email" class="form-input">
@@ -43,7 +44,7 @@
                         <a href="register.html" class="registro">No tiene cuenta?</a>
                     </div>
                     <div class="contact">
-                        <button class="send" type="submit" class="button">ENVIAR</button>
+                        <button class="send" type="submit">ENVIAR</button>
                     </div>
                 </form>
             </div>
