@@ -62,7 +62,7 @@ form.addEventListener("submit", function(event) {
 
 getData() //invocamos a la funcion por primera vez
 
-document.querySelector(".cargar_mas").addEventListener('click', function(e){
+document.querySelector(".load").addEventListener('click', function(e){
     e.preventDefault()
     skip += 10
     getData()
