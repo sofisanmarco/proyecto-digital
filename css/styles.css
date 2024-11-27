@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 /* INDEX */
@@ -17,7 +18,8 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #781d48;
+    font-size: 20px;
 }
 
 .menu {
@@ -25,11 +27,11 @@ a {
     justify-content: space-around;
     align-items: center;
     height: 100px;
-    font-family: "Gluten";
 }
 
 .logo {
     border-radius: 90%;
+    
 }
 
 .footer {
@@ -46,7 +48,6 @@ a {
     text-align: center;
     font-weight: lighter;
     margin-top: 10px;
-    font-style: italic;
 }
 
 .negrita {
@@ -71,12 +72,9 @@ a {
     background-image: url(https://i.pinimg.com/736x/97/fa/f5/97faf5fd511fed665fc7d13d6f095c00.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Gluten", cursive;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
     color: #AE2012;
     height: 100vh;
+    
 }
 .bodyreceta .foto img{
     width: 500px;
@@ -88,6 +86,7 @@ a {
     justify-content: center;
     margin-top: 60px;
     font-size: 38px;
+   
 }
 
 .paraeltexto{
@@ -96,6 +95,8 @@ a {
     margin: 10px 50px 5px 50px;
     align-items: center;
     padding: 40px;
+    
+    
 }
 
 
@@ -103,7 +104,8 @@ a {
     color: rgb(76, 43, 26);
     display: flex;
     width: 670px;
-    font-weight: 400;
+    
+    
 }
 
 .paraeltexto .tiempo{
@@ -111,6 +113,7 @@ a {
     justify-content: center;
     font-weight: 600;
     text-align: center;
+    
 }
 
 .paraeltexto .foto img{
@@ -133,18 +136,11 @@ a {
     background-color: #FFE5EC;
 }
 .cat .veinte{
-    font-family: "Gluten", cursive;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
+   
     font-size: 25px;
     
   }
 .tituloCategories{
-    font-family: "Gluten", cursive;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -152,12 +148,12 @@ a {
     height: 50px;
     color: #DE4D86;
     margin-top: 20px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
   }
   .pregunta{
-    font-family: "Gluten", cursive;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+    
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -165,7 +161,11 @@ a {
     height: 55px;
     color: #E36497;
     margin-top: 5px;
-    background-color: rgba(254, 250, 224)
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+
    
   }
 .categories{
@@ -177,6 +177,7 @@ a {
     padding-right: 20px;
     margin: 20px 30px 30px 30px;
     border-radius: 70px;
+    
 }
 .cat{
     display: flex;
