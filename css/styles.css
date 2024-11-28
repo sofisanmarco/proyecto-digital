@@ -9,7 +9,7 @@
 
 
 body {
-    background-color: rgba(253, 217, 223, 0.51);
+    background-color: #fdd9df82;
 }
 
 li {
@@ -26,8 +26,6 @@ li {
     color: #6C757D;
 }
 
-
-
 .links {
     font-size: 15px;
 }
@@ -38,10 +36,11 @@ li {
     align-items: center;
     height: 80px;
     font-family: "Proza Libre", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+    font-weight: 400;
+    font-style: normal;
 
+    
+}
 .logo {
     border-radius: 90%;
 }
@@ -64,15 +63,15 @@ li {
     font-family: "Prompt", sans-serif;
     font-weight: 1000;
     font-style: normal;
-    
 }
 
 .negrita {
     font-weight: bold;
-    color: rgb(255, 0, 166);
+    color: #DE4D86;
     font-family: "Proza Libre", sans-serif;
     font-weight: 600;
     font-style: normal;
+    
 }
 
 .recetitas {
@@ -83,6 +82,7 @@ li {
     font-weight: bolder;
     font-style: normal;
     color: #6C757D;
+    
 }
 
 .receta {
@@ -90,9 +90,10 @@ li {
     text-align: center;
     font-family: "Proza Libre", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; 
     
 }
+
 
 .load{
     font-size: 20px;
@@ -135,10 +136,6 @@ li {
    
     
     
-}
-.receta-container img{
-    border: 3px solid rgb(94, 61, 61);
-    border-radius: 10%;
 }
 
 .instrucciones{
@@ -217,11 +214,10 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     margin: 20px 30px 30px 30px;
-    border-radius: 70px;
-    
+    border: 20px solid transparent;
+    border-image: url('../SIIIII.png') 70 round;
 }
 
 .categories a{
@@ -238,9 +234,6 @@ li {
     border-radius: 5px; 
     justify-content: center;  
     align-items: center;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 200px;
-    
 }
 
 .categoriescolor{
@@ -255,14 +248,12 @@ li {
     height: 400px;
     margin-top: 15px;
     margin-bottom: 10px;
-    border: 6px solid rgb(94, 61, 61);
+    border: 4px solid rgb(94, 61, 61);
     border-radius: 30%;
 }
 
 .detalle{
     font-weight: bold;
-    
-    
 }
 
 .title {
