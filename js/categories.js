@@ -6,7 +6,6 @@ fetch('https://dummyjson.com/recipes/tags')
         return response.json();
 })
     .then(function(data){
-        console.log(data)
         
         for (let i = 0; i < data.length; i++) {
             let tag = data[i]; 
@@ -31,23 +30,6 @@ fetch('https://dummyjson.com/recipes/tags')
                 
         
             });
-
-       // const colores = document.querySelectorAll('.categoriescolor')
-       // for (let i=0; i<colores.length; i++){
-          //  let color = colores[i]
-          //  color.addEventListener('mouseover', function(){
-                //color.style.color = '#ae2012';
-
-          //  });
-           // let nocolor = colores[i]
-          //  nocolor.addEventListener('mouseover', function(){
-               // nocolor.style.color = '';
-
-         //  });
-
-       ///}
-
-            
         }
           
         }})

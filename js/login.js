@@ -5,8 +5,6 @@ const password = document.getElementById("password")
 const Invalidemail = document.querySelector(".email")
 const Invalidpassword = document.querySelector(".password")
 
-
-
 form.addEventListener("submit", function(event) {
     event.preventDefault(); 
     let errors = false

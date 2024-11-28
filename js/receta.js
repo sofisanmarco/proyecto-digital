@@ -21,7 +21,6 @@ fetch(`https://dummyjson.com/recipes/${id}`)
         return response.json();
     })  
     .then(function(data){
-        console.log(data)
 
         detalleReceta.nombre = data.name
         detalleReceta.tiempo = data.cookTimeMinutes

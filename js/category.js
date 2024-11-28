@@ -11,13 +11,11 @@ fetch(`https://dummyjson.com/recipes/tag/${id}`)
         return response.json();
     })  
     .then(function(data){
-       // console.log(data)
 
        titulo.innerHTML = `Category: ${id}`;
     
         for (let i=0; i < data.recipes.length; i++){
             let right = data.recipes[i];
-    
             
             let markUp = `
                 <article class="caja">

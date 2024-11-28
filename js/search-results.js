@@ -14,7 +14,6 @@ fetch(`https://dummyjson.com/recipes/search?q=${comida}`)
     })
 
     .then(function(data){
-        console.log(data.recipes)
 
         titulo.innerHTML = `Resultados de búsqueda para: ${comida}`
 
