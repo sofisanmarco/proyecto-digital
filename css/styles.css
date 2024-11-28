@@ -40,6 +40,7 @@ li {
     font-style: normal;
 }
 
+
 .logo {
     border-radius: 90%;
 }
@@ -75,7 +76,10 @@ li {
     font-family: "Proza Libre", sans-serif;
     font-weight: 600;
     font-style: normal;
-    
+}
+
+.index-names {
+    font-style: italic;
 }
 
 .recetitas {
@@ -86,8 +90,6 @@ li {
     font-weight: bolder;
     font-style: normal;
     color: #6C757D;
-    
-    
 }
 
 .receta {
@@ -96,8 +98,6 @@ li {
     font-family: "Proza Libre", sans-serif;
     font-weight: 400;
     font-style: normal; 
-    
-    
 }
 
 .receta img{
@@ -394,6 +394,89 @@ li {
     font-family: "Proza Libre", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+/*responsive*/
+
+@media(max-width:460px){
+
+/*header de todas las paginas*/
+    .links {
+        font-size: 7px;
+    }
+
+/*receta*/
+    .receta-container img{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .receta-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+     
+     
+     .paraeltexto {
+         font-size: 10px;
+     }
+
+ /*category*/
+
+ .imagen{
+    width: 300px;
+    height: 300px;
+ }
+
+ .parrafo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px; 
+}
+
+/*Login*/
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 300px;
+    width: 500px;
+    font-size: 17px;
+}
+
+.form-input {
+    width: 400px;
+    height: 25px;
+}
+
+.send {
+    height: 25px;
+    width: 65px;
+    margin-left: 147px;
+
+}
+
+/*Register*/
+
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 300px;
+    width: 500px;
+    font-size: 17px;
+}
+
+
 }
 
 /*color: #781d48;

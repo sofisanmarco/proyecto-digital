@@ -16,7 +16,7 @@ function getData(){
             let markUp = `
                 <article class="receta">
                     <img width="300px" height="300px" src= ${right.image}>
-                    <p> Name: ${right.name} </p>
+                    <p> Name: <span class="index-names"> ${right.name} </span> </p>
                     <p> Nivel de dificultad: <span class="negrita"> ${right.difficulty} </span> </p>
                     <a href=receta.html?id=${right.id}> Mas detalle </a>
                 </article>
@@ -29,7 +29,6 @@ function getData(){
             console.log("Mi error fue", error);
         })
 }
-
 
 const form = document.querySelector("#header-form")
 
@@ -56,11 +55,11 @@ form.addEventListener("submit", function() {
     }
 
     if (!errors) {
-        this.submit
+        form.submit
     }
 })
 
-getData() //invocamos a la funcion por primera vez
+getData() 
 
 let load = document.querySelector(".load")
 
@@ -69,3 +68,11 @@ load.addEventListener('click', function(e){
     cargar += 10
     getData()
 });
+
+
+
+
+
+
+
+
