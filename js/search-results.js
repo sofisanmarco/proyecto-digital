@@ -36,3 +36,5 @@ fetch(`https://dummyjson.com/recipes/search?q=${s}`)
         .catch(function (error){
             console.log("Mi error fue", error);
         })
+
+        

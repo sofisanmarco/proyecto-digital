@@ -55,5 +55,33 @@ fetch('https://dummyjson.com/recipes/tags')
             console.log("Mi error fue", error);
         })
 
+const form = document.querySelector("#header-form")
+
+const search = document.getElementById("search")
+const Invalidsearch = document.querySelector(".invalido")
+
+let errors = false
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    if (search.value === ""){
+        Invalidsearch.innerText = "Incompleto"
+        Invalidsearch.style.display = 'block';
+        errors = true
+    } else {
+        Invalidsearch.style.display = 'none'
+    }
+    if (search.value.length < 3){
+        Invalidsearch.innerText = "El término buscado debe tener minimo 3 caracteres"
+        Invalidsearch.style.display = 'block';
+        errors = true
+    } else {
+        Invalidsearch.style.display = 'none';
+    }
+
+    if (!errors) {
+        this.submit
+    }
+})
       
         

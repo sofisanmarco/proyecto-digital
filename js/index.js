@@ -31,10 +31,10 @@ function getData(){
 }
 
 
-const form = document.querySelector("form")
+const form = document.querySelector("#header-form")
 
 const search = document.getElementById("search")
-const Invalidsearch = document.querySelector(".search")
+const Invalidsearch = document.querySelector(".invalido")
 
 let errors = false
 

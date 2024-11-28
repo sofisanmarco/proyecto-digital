@@ -38,11 +38,15 @@ li {
     font-family: "Proza Libre", sans-serif;
     font-weight: 400;
     font-style: normal;
-
-    
 }
+
 .logo {
     border-radius: 90%;
+}
+
+.invalido {
+    font-size: 10px;
+    color: #DE4D86
 }
 
 .footer {
