@@ -309,8 +309,7 @@ li {
 
 .searching img{
     border: 17px solid transparent;
-    border-image: url('../SIIIII.png') 60 round;
-
+    border-radius: 25px;
 }
 
 .probando{
