@@ -25,7 +25,7 @@ fetch(`https://dummyjson.com/recipes/tag/${id}`)
                     <div class = "parrafo">
                     <p> Name: ${right.name} </p>
                     <p> Nivel de dificultad: ${right.difficulty} </p>
-                    <a class="link" href=receta.html?id=${right.id}> <span class="det"> Mas detalle </a>
+                    <a class="link" href=receta.html?id=${right.id}> <span class="det"> Mas detalle </span> </a>
                     </div>
 
                 </article>
@@ -38,3 +38,32 @@ fetch(`https://dummyjson.com/recipes/tag/${id}`)
     .catch(function(e){
         console.log(e)
     })
+
+const form = document.querySelector("#header-form")
+
+const search = document.getElementById("search")
+const Invalidsearch = document.querySelector(".invalido")
+
+let errors = false
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    if (search.value === ""){
+        Invalidsearch.innerText = "Incompleto"
+        Invalidsearch.style.display = 'block';
+        errors = true
+    } else {
+        Invalidsearch.style.display = 'none'
+    }
+    if (search.value.length < 3){
+        Invalidsearch.innerText = "El término buscado debe tener minimo 3 caracteres"
+        Invalidsearch.style.display = 'block';
+        errors = true
+    } else {
+        Invalidsearch.style.display = 'none';
+    }
+
+    if (!errors) {
+        this.submit
+    }
+})
