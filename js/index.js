@@ -8,7 +8,6 @@ function getData(){
         return response.json();
     })
     .then(function(data){
-        console.log(data.recipes)
 
         for (let i=0; i < data.recipes.length; i++){
             let right = data.recipes[i];
@@ -46,7 +45,7 @@ form.addEventListener("submit", function() {
     } else {
         Invalidsearch.style.display = 'none'
     }
-    if (search.value.length < 3){
+    if (1 < search.value.length < 3){
         Invalidsearch.innerText = "El término buscado debe tener minimo 3 caracteres"
         Invalidsearch.style.display = 'block';
         errors = true

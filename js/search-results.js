@@ -4,6 +4,7 @@ let queryStringObj = new URLSearchParams(queryString);
 
 let comida = queryStringObj.get("search") 
 let search = document.querySelector(".recetitas") 
+let titulo = document.querySelector(".search-h1")
 let fotos = ""
 
 
@@ -15,11 +16,13 @@ fetch(`https://dummyjson.com/recipes/search?q=${comida}`)
     .then(function(data){
         console.log(data.recipes)
 
+        titulo.innerHTML = `Resultados de búsqueda para: ${comida}`
+
         for (let i=0; i < data.recipes.length; i++){ 
             let right = data.recipes[i];
             
             let markUp = `
-                <article class="probando">
+                <article class="search-receta">
                     <img width="300px" height="300px" src=${right.image}>
                     <p> Name: ${right.name} </p>
                     <p> Nivel de dificultad: ${right.difficulty}  </p>
