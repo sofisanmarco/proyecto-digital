@@ -12,15 +12,15 @@ form.addEventListener("submit", function(event) {
     event.preventDefault(); 
 
     if (email.value === "") {
-        Invalidemail.innerText = "Incompleto"
+        Invalidemail.innerText = "Por favor complete el campo"
         Invalidemail.style.display = "block"
         errors = true
     } else {
         Invalidemail.style.display = 'none'
     }
 
-    if (password.value === "" || password.value.length < 3) {
-        Invalidpassword.innerText = "Incompleto"
+    if (password.value === "") {
+        Invalidpassword.innerText = "Por favor complete el campo"
         Invalidpassword.style.display = 'block'
         errors = true
     } else {

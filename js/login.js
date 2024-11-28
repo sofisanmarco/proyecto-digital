@@ -12,16 +12,14 @@ form.addEventListener("submit", function(event) {
     let errors = false
 
     if (email.value === "") {
-        Invalidemail.innerText = "Incompleto"
-        Invalidemail.style.display = "block"
+        alert("Por favor complete el campo email")
         errors = true
     } else {
         Invalidemail.style.display = 'none'
     }
 
     if (password.value === "" || password.value.length < 3) {
-        Invalidpassword.innerText = "Incompleto"
-        Invalidpassword.style.display = 'block'
+        alert("Por favor complete el campo contraseña")
         errors = true
     } else {
         Invalidpassword.style.display = 'none'
@@ -48,7 +46,7 @@ header.addEventListener("submit", function(event) {
     } else {
         Invalidsearch.style.display = 'none'
     }
-    if (search.value.length < 3){
+    if (1 < search.value.length < 3){
         Invalidsearch.innerText = "El término buscado debe tener minimo 3 caracteres"
         Invalidsearch.style.display = 'block';
         error = true
