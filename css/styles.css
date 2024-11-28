@@ -444,6 +444,17 @@ li {
 
 /*Register*/
 
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 300px;
+    width: 500px;
+    font-size: 17px;
+}
+
 
 }
 
