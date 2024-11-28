@@ -46,8 +46,8 @@ const Invalidsearch = document.querySelector(".invalido")
 
 let errors = false
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
+form.addEventListener("submit", function() {
+   
     if (search.value === ""){
         Invalidsearch.innerText = "Incompleto"
         Invalidsearch.style.display = 'block';

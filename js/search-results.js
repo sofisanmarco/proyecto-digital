@@ -1,13 +1,13 @@
+
 let queryString = location.search
 let queryStringObj = new URLSearchParams(queryString);
 
-let s = queryStringObj.get("search")
-let search = document.querySelector(".recetitas")
-let recets = ""
+let comida = queryStringObj.get("search") 
+let search = document.querySelector(".recetitas") 
+let fotos = ""
 
-console.log(s)
 
-fetch(`https://dummyjson.com/recipes/search?q=${s}`)
+fetch(`https://dummyjson.com/recipes/search?q=${comida}`) 
     .then(function(response){
         return response.json();
     })
@@ -15,7 +15,7 @@ fetch(`https://dummyjson.com/recipes/search?q=${s}`)
     .then(function(data){
         console.log(data.recipes)
 
-        for (let i=0; i < data.recipes.length; i++){
+        for (let i=0; i < data.recipes.length; i++){ 
             let right = data.recipes[i];
             
             let markUp = `
@@ -27,14 +27,14 @@ fetch(`https://dummyjson.com/recipes/search?q=${s}`)
                 </article>
                 `;
 
-            recets += markUp;
+            fotos += markUp;
         }
-        search.innerHTML = recets;
-
+        search.innerHTML = fotos; 
         })
         
         .catch(function (error){
             console.log("Mi error fue", error);
         })
 
+        
         
