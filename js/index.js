@@ -1,13 +1,14 @@
 const recetas = document.querySelector('.recetitas') 
 let recetin = ''  
-let cargar = 0
+let loading = 0
 
 function getData(){
-    fetch(`https://dummyjson.com/recipes?limit=10&cargar=${cargar}`)
+    fetch(`https://dummyjson.com/recipes?limit=10&skip=${loading}`)
     .then(function(response){
         return response.json();
     })
     .then(function(data){
+        console.log(data.recipes)
 
         for (let i=0; i < data.recipes.length; i++){
             let right = data.recipes[i];
@@ -15,9 +16,9 @@ function getData(){
             let markUp = `
                 <article class="receta">
                     <img width="300px" height="300px" src= ${right.image}>
-                    <p> Name: <span class="index-names"> ${right.name} </span> </p>
+                    <p> Name: ${right.name} </p>
                     <p> Nivel de dificultad: <span class="negrita"> ${right.difficulty} </span> </p>
-                    <a href=receta.html?id=${right.id}> Mas detalle </a>
+                    <a class= 'eldetalle' href=receta.html?id=${right.id}> Mas detalle </a>
                 </article>
                 `;
             recetin += markUp;
@@ -29,15 +30,16 @@ function getData(){
         })
 }
 
-const form = document.querySelector("#header-form")
+
+const form = document.querySelector("form")
 
 const search = document.getElementById("search")
-const Invalidsearch = document.querySelector(".invalido")
+const Invalidsearch = document.querySelector(".search")
 
 let errors = false
 
 form.addEventListener("submit", function() {
-   
+    
     if (search.value === ""){
         Invalidsearch.innerText = "Incompleto"
         Invalidsearch.style.display = 'block';
@@ -45,7 +47,7 @@ form.addEventListener("submit", function() {
     } else {
         Invalidsearch.style.display = 'none'
     }
-    if (1 < search.value.length < 3){
+    if (search.value.length < 3){
         Invalidsearch.innerText = "El término buscado debe tener minimo 3 caracteres"
         Invalidsearch.style.display = 'block';
         errors = true
@@ -54,24 +56,14 @@ form.addEventListener("submit", function() {
     }
 
     if (!errors) {
-        form.submit
+        this.submit
     }
 })
 
 getData() 
-
 let load = document.querySelector(".load")
-
 load.addEventListener('click', function(e){
     e.preventDefault()
-    cargar += 10
-    getData()
+    loading += 10
+    getData()
 });
-
-
-
-
-
-
-
-

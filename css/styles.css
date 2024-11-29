@@ -116,7 +116,7 @@ li {
     color: rgb(232, 230, 233);
 }
 
-.cargar{
+.loading{
     display: flex;
     justify-content: center;
     align-self: center;
@@ -225,8 +225,8 @@ li {
     justify-content: center;
     padding: 20px;
     margin: 20px 30px 30px 30px;
-    border: 20px solid transparent;
-    border-image: url('../SIIIII.png') 70 round;
+    border: 10px dotted #E36497;
+    border-radius: 15%;
 }
 
 .categories a{
