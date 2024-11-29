@@ -37,26 +37,13 @@ const header = document.querySelector("#header-form")
 const search = document.getElementById("search")
 const Invalidsearch = document.querySelector(".invalido")
 
-let error = false
-
 header.addEventListener("submit", function() {
-   
-    if (search.value === ""){
-        Invalidsearch.innerText = "Incompleto"
-        Invalidsearch.style.display = 'block';
-        errors = true
-    } else {
-        Invalidsearch.style.display = 'none'
-    }
-    if (search.value.length < 3){
+
+    if (search.value == "" || search.value.length < 3) {
         Invalidsearch.innerText = "El término buscado debe tener minimo 3 caracteres"
         Invalidsearch.style.display = 'block';
-        errors = true
     } else {
-        Invalidsearch.style.display = 'none';
+        header.submit
     }
-
-    if (!errors) {
-        this.submit
-    }
+    
 })

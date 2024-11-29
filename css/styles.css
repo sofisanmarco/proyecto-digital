@@ -315,7 +315,6 @@ li {
    
 }
 
-
 .search-receta{
     padding-top: 30px;
 }
@@ -337,6 +336,12 @@ li {
     font-style: normal; 
 }
 
+.a-detalle {
+    text-decoration: none;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* LOGIN */
 
