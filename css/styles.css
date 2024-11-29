@@ -132,6 +132,18 @@ li {
     height: 35px;
 }
 
+.search-button{
+    color: #DE4D86;
+    background-color: white;
+    border: 1px solid #DE4D86;
+    width: 80px;
+}
+
+#header-form .search{
+    border: 1px solid #DE4D86;
+    background-color: white;
+    color: #DE4D86;
+}
 
 /* RECETA */
 

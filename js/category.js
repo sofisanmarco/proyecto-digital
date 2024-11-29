@@ -41,13 +41,13 @@ fetch(`https://dummyjson.com/recipes/tag/${id}`)
     const search = document.getElementById("search")
     const Invalidsearch = document.querySelector(".invalido")
     
-    header.addEventListener("submit", function() {
-    
+    header.addEventListener("submit", function(e) {
+    e.preventDefault()
         if (search.value == "" || search.value.length < 3) {
             Invalidsearch.innerText = "El término buscado debe tener minimo 3 caracteres"
             Invalidsearch.style.display = 'block';
         } else {
-            header.submit
+            header.submit()
         }
         
     })
