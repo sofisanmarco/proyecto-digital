@@ -31,7 +31,7 @@ fetch(`https://dummyjson.com/recipes/${id}`)
         nombreReceta.innerText = detalleReceta.nombre
         tiempo.innerText = `${detalleReceta.tiempo} min.`
         instrucciones.innerText = `${detalleReceta.instrucciones}`
-        categorias.innerText = `${detalleReceta.categorias}`
+        categorias.innerText = `${detalleReceta.categorias}` 
         foto.innerHTML = `<img weight="500px" height="500px" src=${detalleReceta.foto}>`
 
     })
