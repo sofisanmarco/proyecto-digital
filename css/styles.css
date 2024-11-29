@@ -180,6 +180,11 @@ li {
     margin-bottom: 15px;
 }
 
+.tags {
+    text-decoration: none;
+    color: #6C757D;
+}
+
 /* CATEGORIES */
 
 .bodycategories{

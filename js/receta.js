@@ -31,12 +31,11 @@ fetch(`https://dummyjson.com/recipes/${id}`)
         nombreReceta.innerText = detalleReceta.nombre
         tiempo.innerText = `${detalleReceta.tiempo} min.`
         instrucciones.innerText = `${detalleReceta.instrucciones}`
-        categorias.innerText = `${detalleReceta.categorias}`
         foto.innerHTML = `<img weight="500px" height="500px" src=${detalleReceta.foto}>`
+        categorias.innerText = `${detalleReceta.categorias}`
 
     })
-    .catch(function(e){
-        console.log(e)
+    .catch(function(){
     })
 
 const form = document.querySelector("#header-form")
