@@ -7,7 +7,6 @@ let search = document.querySelector(".recetitas")
 let titulo = document.querySelector(".search-h1")
 let fotos = ""
 
-
 fetch(`https://dummyjson.com/recipes/search?q=${comida}`) 
     .then(function(response){ 
         return response.json();
@@ -25,7 +24,7 @@ fetch(`https://dummyjson.com/recipes/search?q=${comida}`)
                         <img width="300px" height="300px" src=${right.image}>
                         <p> Name: ${right.name} </p>
                         <p> Nivel de dificultad: ${right.difficulty}  </p>
-                        <a href=receta.html?id=${right.id}> Mas detalle </a>
+                        <a class="a-detalle" href=receta.html?id=${right.id}> Mas detalle </a>
                     </article>
                     `;
 
