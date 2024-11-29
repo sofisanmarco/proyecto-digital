@@ -442,6 +442,10 @@ li {
         font-size: 10px;
     }
 
+    .invalido {
+        font-size: 7px;
+    }
+
 /*Footer*/ 
     .footer {
         font-size: 10px;

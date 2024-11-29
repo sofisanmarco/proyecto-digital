@@ -28,7 +28,7 @@ form.addEventListener("submit", function(event) {
     }
 
     if (!errors) {
-        this.submit()
+        form.submit()
     }
 })
 
