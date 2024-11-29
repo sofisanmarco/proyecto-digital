@@ -8,7 +8,6 @@ function getData(){
         return response.json();
     })
     .then(function(data){
-        console.log(data.recipes)
 
         for (let i=0; i < data.recipes.length; i++){
             let right = data.recipes[i];
@@ -25,8 +24,7 @@ function getData(){
         }
         recetas.innerHTML = recetin;
         })
-        .catch(function (error){
-            console.log("Mi error fue", error);
+        .catch(function (){
         })
 }
 

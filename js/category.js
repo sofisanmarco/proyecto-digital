@@ -33,8 +33,7 @@ fetch(`https://dummyjson.com/recipes/tag/${id}`)
         recetas.innerHTML = recetin;
 
     })
-    .catch(function(e){
-        console.log(e)
+    .catch(function(){
     })
 
 const form = document.querySelector("#header-form")

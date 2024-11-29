@@ -32,8 +32,7 @@ fetch(`https://dummyjson.com/recipes/search?q=${comida}`)
             search.innerHTML = fotos; 
             })
         
-        .catch(function (error){
-            console.log("Mi error fue", error);
+        .catch(function (){
         })
 
         

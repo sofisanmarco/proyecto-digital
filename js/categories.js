@@ -33,8 +33,7 @@ fetch('https://dummyjson.com/recipes/tags')
         }
           
         }})
-        .catch(function (error){
-            console.log("Mi error fue", error);
+        .catch(function (){
         })
 
 const form = document.querySelector("#header-form")
