@@ -14,6 +14,8 @@ fetch(`https://dummyjson.com/recipes/search?q=${comida}`)
     })
 
     .then(function(data){
+        if(data.recipes.length > 0){
+
             titulo.innerHTML = `Resultados de búsqueda para: ${comida}`
             for (let i=0; i < data.recipes.length; i++){ 
                 let right = data.recipes[i];
@@ -30,6 +32,10 @@ fetch(`https://dummyjson.com/recipes/search?q=${comida}`)
                 fotos += markUp;
             }
             search.innerHTML = fotos; 
+
+        }else{
+            search.innerHTML = `No hay coincidencias con el termino buscado "${comida}"`
+        }
             })
         
         .catch(function (){
