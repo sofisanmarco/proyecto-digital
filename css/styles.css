@@ -51,6 +51,7 @@ li {
 
 .footer {
     background-color: #FF8FAB;
+    font-family: "Proza Libre", sans-serif;
     display: flex;
     height: 100px;
     margin-top: 75px;
@@ -178,6 +179,11 @@ li {
 
 .instrucciones, .tiempo {
     margin-bottom: 15px;
+}
+
+.tags{
+    text-decoration: none;
+    color: #6C757D;
 }
 
 /* CATEGORIES */

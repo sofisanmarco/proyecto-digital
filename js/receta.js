@@ -34,6 +34,15 @@ fetch(`https://dummyjson.com/recipes/${id}`)
         categorias.innerText = `${detalleReceta.categorias}` 
         foto.innerHTML = `<img weight="500px" height="500px" src=${detalleReceta.foto}>`
 
+        let tags = ""
+
+        for (let i=0; i < data.tags.length; i++) {
+            let cat = data.tags[i]
+            tags += `<p> <a class="tags" href="category.html?id=${cat}"> ${cat} </a> <p>`
+        };
+
+        categorias.innerHTML = tags
+
     })
     .catch(function(e){
         console.log(e)
