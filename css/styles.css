@@ -40,7 +40,12 @@ li {
 }
 
 .logo {
+    width: 65px;
+    height: auto;
     border-radius: 90%;
+    margin-top: 20px;
+    
+
 }
 
 .invalido {
@@ -310,10 +315,6 @@ li {
    
 }
 
-.searching img{
-    border: 3px solid transparent;
-    border-radius: 25px;
-}
 
 .search-receta{
     padding-top: 30px;
