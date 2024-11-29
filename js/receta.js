@@ -31,8 +31,17 @@ fetch(`https://dummyjson.com/recipes/${id}`)
         nombreReceta.innerText = detalleReceta.nombre
         tiempo.innerText = `${detalleReceta.tiempo} min.`
         instrucciones.innerText = `${detalleReceta.instrucciones}`
-        foto.innerHTML = `<img weight="500px" height="500px" src=${detalleReceta.foto}>`
         categorias.innerText = `${detalleReceta.categorias}`
+        foto.innerHTML = `<img weight="500px" height="500px" src=${detalleReceta.foto}>`
+
+        let tags = ""
+
+        for (let i=0; i < data.tags.length; i++) {
+            let cat = data.tags[i]
+            tags += `<p> <a class="tags" href="category.html?id=${cat}"> ${cat} </a> <p>`
+        };
+
+        categorias.innerHTML = tags
 
     })
     .catch(function(){

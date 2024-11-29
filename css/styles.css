@@ -39,7 +39,6 @@ li {
     font-style: normal;
 }
 
-
 .logo {
     border-radius: 90%;
 }
@@ -51,12 +50,14 @@ li {
 
 .footer {
     background-color: #FF8FAB;
+    font-family: "Proza Libre", sans-serif;
     display: flex;
     height: 100px;
     margin-top: 75px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
+    color: rgb(255, 239, 251);
 }
 
 .h1-index {
@@ -89,6 +90,7 @@ li {
     font-weight: bolder;
     font-style: normal;
     color: #6C757D;
+   
 }
 
 .receta {
@@ -97,6 +99,7 @@ li {
     font-family: "Proza Libre", sans-serif;
     font-weight: 400;
     font-style: normal; 
+
 }
 
 .receta img{
@@ -180,7 +183,7 @@ li {
     margin-bottom: 15px;
 }
 
-.tags {
+.tags{
     text-decoration: none;
     color: #6C757D;
 }
@@ -258,10 +261,11 @@ li {
 /* CATEGORY */
 
 .imagen{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin-top: 15px;
     margin-bottom: 10px;
+    border: 3px solid transparent;
     border-radius: 25px;
 }
 
@@ -284,6 +288,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: 400;
 }
 
 .link {
@@ -302,10 +307,11 @@ li {
     font-family: "Prompt", sans-serif;
     font-weight: 1000;
     font-style: normal;
+   
 }
 
 .searching img{
-    border: 17px solid transparent;
+    border: 3px solid transparent;
     border-radius: 25px;
 }
 
@@ -316,6 +322,7 @@ li {
 .search-receta p{
     margin-top: 5px;
     text-align: center;
+
 }
 
 .search-receta a{
@@ -324,7 +331,11 @@ li {
     margin-top: 5px;
     display: flex;
     justify-content: center;
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
 }
+
 
 /* LOGIN */
 
@@ -341,6 +352,7 @@ li {
     font-weight: 400;
     font-style: normal;
 }
+
 
 .contact {
     margin-top: 17px;
@@ -364,10 +376,16 @@ li {
 }
 
 .loginlogo {
+    margin-bottom: 0;
+    
+}
+
+.imagen{
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 25px;
 }
+
 
 .email, .password{
     font-size: 15px;
@@ -393,7 +411,9 @@ li {
     font-family: "Proza Libre", sans-serif;
     font-weight: 400;
     font-style: normal;
+    
 }
+
 
 /*responsive*/
 

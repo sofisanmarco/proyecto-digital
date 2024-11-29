@@ -9,30 +9,28 @@ let fotos = ""
 
 
 fetch(`https://dummyjson.com/recipes/search?q=${comida}`) 
-    .then(function(response){
+    .then(function(response){ 
         return response.json();
     })
 
     .then(function(data){
+            titulo.innerHTML = `Resultados de búsqueda para: ${comida}`
+            for (let i=0; i < data.recipes.length; i++){ 
+                let right = data.recipes[i];
+                
+                let markUp = `
+                    <article class="search-receta">
+                        <img width="300px" height="300px" src=${right.image}>
+                        <p> Name: ${right.name} </p>
+                        <p> Nivel de dificultad: ${right.difficulty}  </p>
+                        <a href=receta.html?id=${right.id}> Mas detalle </a>
+                    </article>
+                    `;
 
-        titulo.innerHTML = `Resultados de búsqueda para: ${comida}`
-
-        for (let i=0; i < data.recipes.length; i++){ 
-            let right = data.recipes[i];
-            
-            let markUp = `
-                <article class="search-receta">
-                    <img width="300px" height="300px" src=${right.image}>
-                    <p> Name: ${right.name} </p>
-                    <p> Nivel de dificultad: ${right.difficulty}  </p>
-                    <a href=receta.html?id=${right.id}> Mas detalle </a>
-                </article>
-                `;
-
-            fotos += markUp;
-        }
-        search.innerHTML = fotos; 
-        })
+                fotos += markUp;
+            }
+            search.innerHTML = fotos; 
+            })
         
         .catch(function (error){
             console.log("Mi error fue", error);
