@@ -16,17 +16,24 @@ fetch('https://dummyjson.com/recipes/tags')
                 `;
             type += markUp;   
         categorias.innerHTML = type;
-        const ratonarriba = document.querySelectorAll(`.veinte`);
-        for (let i =0; i<ratonarriba.length; i++){
-            let raton =ratonarriba[i]
-            raton.addEventListener('mouseover', function(){
-                raton.style.color = 'white';
+        const colorinche = document.querySelectorAll(`.veinte`);
+        for (let i =0; i<colorinche.length; i++){
+            let colorin =colorinche[i]
+            colorin.addEventListener('mouseover', function(){
+                colorin.style.fontSize = '25px';
+                colorin.style.backgroundColor = 'white';
+                colorin.style.border = 'pink 2px solid';
+                colorin.style.borderRadius = '3px';
     
             
             });
-            let ratin =ratonarriba[i]
-            ratin.addEventListener('mouseout', function(){
-                ratin.style.color = '';
+            let colorout =colorinche[i]
+            colorout.addEventListener('mouseout', function(){
+                colorout.style.fontSize = ''
+                colorout.style.backgroundColor= '';
+                colorout.style.border = '';
+                colorout.style.borderRadius = '';
+
                 
         
             });
